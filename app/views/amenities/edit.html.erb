@@ -1,6 +1,5 @@
-<h1>Editing amenity</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @amenity %> |
-<%= link_to 'Back', amenities_path %>
+<%- model_class = Amenity -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Amenity %></h1>
+</div>
+<%= render :partial => 'form' %>
